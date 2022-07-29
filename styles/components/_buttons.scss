@@ -1,0 +1,35 @@
+.rounded {
+    border-radius: toBorderRadius(2);
+}
+
+.rounded-lg {
+    border-radius: toBorderRadius(5);
+}
+
+.rounded-xl {
+    border-radius: toBorderRadius(7);
+}
+
+.rounded-2xl {
+    border-radius: toBorderRadius(10);
+}
+
+.rounded-3xl {
+    border-radius: toBorderRadius(13);
+}
+
+.btn-primary {
+    color: $black-50;
+    font-weight: $medium;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+
+    &.active {
+        background-color: $blue;
+        color: $white;
+    }
+}

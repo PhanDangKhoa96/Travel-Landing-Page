@@ -1,0 +1,13 @@
+.header {
+    background-color: purple;
+    height: 100vh;
+}
+
+.nav {
+    height: $header-height;
+
+    &__logo {
+        color: $white;
+        font-size: $font-4xl;
+    }
+}
