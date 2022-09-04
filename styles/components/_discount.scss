@@ -1,0 +1,27 @@
+.discount {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    text-align: center;
+
+    &__content {
+        overflow: hidden;
+        padding: 114px 10%;
+        background-image: url('/images/discount-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: toBorderRadius(20);
+    }
+
+    &__title {
+        margin-bottom: 45px;
+        color: var(--white);
+    }
+
+    &__button {
+        color: var(--blue);
+        background-color: var(--white);
+        border-radius: toBorderRadius(5);
+        padding: 25px 35px;
+    }
+}

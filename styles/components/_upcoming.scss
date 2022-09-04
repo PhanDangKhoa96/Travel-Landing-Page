@@ -1,0 +1,109 @@
+.upcoming {
+    display: grid;
+    justify-items: center;
+    padding-top: 45rem;
+    padding-bottom: 5rem;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        background-color: var(--white);
+        padding: 10px;
+        display: inline-flex;
+        column-gap: 10px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.05);
+        border-radius: toBorderRadius(2);
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        padding: 10px;
+        border-radius: toBorderRadius(2);
+        color: var(--black-50);
+
+        &.active {
+            background-color: var(--blue);
+            color: var(--white);
+        }
+    }
+
+    &__content {
+        display: grid;
+        gap: 30px 20px;
+    }
+
+
+
+    &__card {
+        padding: 20px 27px 30px;
+        border-radius: toBorderRadius(10);
+        background-color: var(--white);
+        position: relative;
+    }
+
+    &__date {
+        position: absolute;
+        right: -55px;
+        transform: rotate(90deg);
+        top: 27%;
+        color: var(--black-50);
+        letter-spacing: 8px;
+    }
+
+    &__img {
+        margin-right: 33px;
+        margin-bottom: 20px;
+
+
+        img {
+            aspect-ratio: 1;
+            width: 100%;
+            border-radius: toBorderRadius(10);
+            object-fit: cover;
+        }
+    }
+
+    &__data {
+        padding-left: 20px;
+        display: grid;
+        row-gap: 10px;
+    }
+
+    &__info {
+        font-size: var(--font-sm);
+        color: var(--black-50);
+
+        span {
+            color: #F178B6;
+            background-color: #FCDDEC;
+            border-radius: toBorderRadius(20);
+            display: inline-block;
+            margin-right: 12px;
+            padding: 0 16px;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            color: var(--black-50);
+
+            strong {
+                color: var(--black);
+            }
+        }
+
+        button {
+            color: var(--blue);
+            background-color: #F2F6FF;
+            padding: 13px 20px;
+            border-radius: toBorderRadius(2);
+        }
+    }
+}

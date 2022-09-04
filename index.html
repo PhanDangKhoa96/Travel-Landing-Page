@@ -5,20 +5,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <title>Treloo</title>
 </head>
 
 <body>
+
+    <!-- HEADER SECTION -->
     <header class="header">
-        <nav class="nav container">
+        <nav class="nav container" id="nav">
             <a href="#" class="nav__logo">Treloo</a>
 
-            <i class="ri-menu-line"></i>
-            <i class="ri-close-line"></i>
+            <i class="ri-menu-line nav__toggle" id="nav-toggle"></i>
 
-            <ul class="nav__menu">
+
+            <ul class="nav__menu" id="nav-menu">
                 <li class="nav__item">
                     <a href="#" class="nav__link">Review</a>
                 </li>
@@ -34,12 +41,350 @@
                 <li class="nav__item">
                     <a href="#" class="nav__link">Contact</a>
                 </li>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
             </ul>
         </nav>
-        <div class="">adafdsafdsafdsafdsfsa</div>
+
+        <div class="header__content container">
+            <h1 class="header__title">
+                Discover your life, travel where you want
+            </h1>
+            <p class="header__description">Would you explore natur paradise in the world, let’s find the best
+                destination in world with us.</p>
+        </div>
+
+        <div class="header__booking booking container">
+
+            <ul class="booking__list">
+                <li class="booking__item active"><i class="ri-plane-fill"></i> Flight</li>
+                <li class="booking__item"><i class="ri-home-8-fill"></i> Hotel</li>
+            </ul>
+
+            <div class="booking__content">
+                <div class="booking__location">
+                    <div class="booking__from">
+                        <span>Leaving from</span>
+                        <p>Dubai</p>
+                    </div>
+                    <i class="ri-plane-fill"></i>
+                    <div class="booking__to">
+                        <span>Going to</span>
+                        <p>New York</p>
+                    </div>
+                </div>
+
+                <div class="booking__time">
+                    <div class="booking__from">
+                        <span>Leave <i class="ri-plane-fill"></i></span>
+                        <p>23 Jan, Sat</p>
+                    </div>
+                    <i class="ri-calendar-todo-line"></i>
+                    <div class="booking__to">
+                        <span>Return <i class="ri-plane-fill"></i></span>
+                        <p>14 Jan, Thu</p>
+                    </div>
+                </div>
+
+                <button class="booking__search">
+                    <i class="ri-search-line"></i>
+                </button>
+            </div>
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- END HEADER SECTION -->
+    <main class="main container">
+
+        <!-- UPCOMING SECTION -->
+        <section class="section upcoming" id="upcoming">
+            <h2 class="upcoming__title">Special Upcoming Offers</h2>
+            <ul class="upcoming__list">
+                <li class="upcoming__item active">Team</li>
+                <li class="upcoming__item">Couple</li>
+                <li class="upcoming__item">Family</li>
+            </ul>
+
+            <div class="upcoming__content">
+                <div class="upcoming__card">
+                    <span class="upcoming__date">14 FEB 2022</span>
+                    <div class="upcoming__img">
+                        <img src="/images/upcoming-1.jpg" alt="">
+                    </div>
+
+                    <div class="upcoming__data">
+                        <p class="upcoming__info">
+                            <span class="upcoming_tag">Relax</span>
+                            3 Days, 3 Nights
+                        </p>
+                        <h5>Loga Sea</h5>
+                        <p class="upcoming__price">
+                            <span>
+                                <strong>700$</strong>
+                                /Person
+                            </span>
+                            <button>Book Now</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upcoming__card">
+                    <span class="upcoming__date">18 JUN 2022</span>
+                    <div class="upcoming__img">
+                        <img src="/images/upcoming-2.jpg" alt="">
+                    </div>
+
+                    <div class="upcoming__data">
+                        <p class="upcoming__info">
+                            <span class="upcoming_tag">Adventure</span>
+                            4 Days, 3 Nights
+                        </p>
+                        <h5>Ansgar Scheffold</h5>
+                        <p class="upcoming__price">
+                            <span>
+                                <strong>400$</strong>
+                                /Person
+                            </span>
+                            <button>Book Now</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upcoming__card">
+                    <span class="upcoming__date">22 DEC 2022</span>
+                    <div class="upcoming__img">
+                        <img src="/images/upcoming-3.jpg" alt="">
+                    </div>
+
+                    <div class="upcoming__data">
+                        <p class="upcoming__info">
+                            <span class="upcoming_tag">Relax</span>
+                            7 Days, 6 Nights
+                        </p>
+                        <h5>Lona X</h5>
+                        <p class="upcoming__price">
+                            <span>
+                                <strong>340$</strong>
+                                /Person
+                            </span>
+                            <button>Book Now</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END UPCOMING SECTION -->
+
+        <!-- TRAVEL SECTION -->
+        <section class="section travel">
+            <div class="travel__content">
+                <h2 class="travel__title">Travel Any Corner of The World With Us</h2>
+                <p class="travel__description">Would you explore nature paradise in the world, let’s find the best
+                    destination in world with us, Would
+                    you explore nature paradise in the world, let’s find the best destination in world with us. Would
+                    you
+                    explore nature paradise in the world, let’s find the best destination in world with us.
+                    <br>
+                    <br>
+                    Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                </p>
+            </div>
+            <div class="travel__image">
+                <img src="/images/travel.jpg" alt="">
+                <span class="travel__figure">
+                    <span>300+</span> destination
+                </span>
+                <span class="travel__figure">
+                    <span>5000+</span> tourists
+                </span>
+                <span class="travel__figure">
+                    <span>150+</span> hotels
+                </span>
+            </div>
+        </section>
+        <!-- END TRAVEL SECTION -->
+
+        <!-- DESTINATION SECTION -->
+        <section class="section destination">
+            <h2 class="destination__title">Recommended Destination</h2>
+
+            <div class="destination__buttons">
+                <button class="active">Popular</button>
+                <button>Adventure</button>
+                <button>Beach</button>
+            </div>
+
+            <div class="destination__content">
+                <div class="destination__card">
+                    <span class="destination__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                    <img src="/images/destination-1.jpg" alt="">
+
+                    <div class="destination__card-data">
+                        <p>Kina Mountain</p>
+                        <span>
+                            <i class="ri-map-pin-2-fill"></i>
+                            Cambodia
+                        </span>
+                    </div>
+                </div>
+                <div class="destination__card">
+                    <span class="destination__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                    <img src="/images/destination-2.jpg" alt="">
+
+                    <div class="destination__card-data">
+                        <p>Kina Mountain</p>
+                        <span>
+                            <i class="ri-map-pin-2-fill"></i>
+                            Cambodia
+                        </span>
+                    </div>
+                </div>
+                <div class="destination__card">
+                    <span class="destination__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                    <img src="/images/destination-3.jpg" alt="">
+
+                    <div class="destination__card-data">
+                        <p>Kina Mountain</p>
+                        <span>
+                            <i class="ri-map-pin-2-fill"></i>
+                            Cambodia
+                        </span>
+                    </div>
+                </div>
+                <div class="destination__card">
+                    <span class="destination__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                    <img src="/images/destination-4.jpg" alt="">
+
+                    <div class="destination__card-data">
+                        <p>Kina Mountain</p>
+                        <span>
+                            <i class="ri-map-pin-2-fill"></i>
+                            Cambodia
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END DESTINATION SECTION -->
+
+        <!-- TESTIMONIAL SECTION -->
+        <section class="section testimonial">
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial__card">
+                            <img src="/images/quote-symbol.png" class="testimonial__card-pattern" alt="">
+                            <div class="testimonial__card-data">
+                                <p class="testimonial__card-description">Our trip to Morocco was truly a onece in a
+                                    lifetime
+                                    experience
+                                    and we are so grateful to everyone
+                                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+
+                                <p class="testimonial__card-author">-Vand D</p>
+                                <p class="testimonial__card-credit">Happy Treloo</p>
+                            </div>
+                            <div class="testimonial__card-image">
+                                <span class="testimonial__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                                <img src="/images/testimonial-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__card">
+                            <img src="/images/quote-symbol.png" class="testimonial__card-pattern" alt="">
+                            <div class="testimonial__card-data">
+                                <p class="testimonial__card-description">Our trip to Morocco was truly a onece in a
+                                    lifetime
+                                    experience
+                                    and we are so grateful to everyone
+                                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+
+                                <p class="testimonial__card-author">-Vand D</p>
+                                <p class="testimonial__card-credit">Happy Treloo</p>
+                            </div>
+                            <div class="testimonial__card-image">
+                                <span class="testimonial__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                                <img src="/images/testimonial-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__card">
+                            <img src="/images/quote-symbol.png" class="testimonial__card-pattern" alt="">
+                            <div class="testimonial__card-data">
+                                <p class="testimonial__card-description">Our trip to Morocco was truly a onece in a
+                                    lifetime
+                                    experience
+                                    and we are so grateful to everyone
+                                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+
+                                <p class="testimonial__card-author">-Vand D</p>
+                                <p class="testimonial__card-credit">Happy Treloo</p>
+                            </div>
+                            <div class="testimonial__card-image">
+                                <span class="testimonial__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                                <img src="/images/testimonial-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__card">
+                            <img src="/images/quote-symbol.png" class="testimonial__card-pattern" alt="">
+                            <div class="testimonial__card-data">
+                                <p class="testimonial__card-description">Our trip to Morocco was truly a onece in a
+                                    lifetime
+                                    experience
+                                    and we are so grateful to everyone
+                                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</p>
+
+                                <p class="testimonial__card-author">-Vand D</p>
+                                <p class="testimonial__card-credit">Happy Treloo</p>
+                            </div>
+                            <div class="testimonial__card-image">
+                                <span class="testimonial__card-tag"><i class="ri-star-fill"></i>4.2</span>
+                                <img src="/images/testimonial-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="testimonial__buttons">
+                <div class="testimonial-button-prev"><i class="ri-arrow-left-s-line"></i></div>
+                <div class="testimonial-button-next"><i class="ri-arrow-right-s-line"></i></div>
+            </div>
+        </section>
+        <!-- END TESTIMONIAL SECTION -->
+
+        <!-- DISCOUNT SECTION -->
+        <section class="section discount">
+            <div class="discount__content">
+                <!-- <img src="/images/discount-bg.jpg" alt=""> -->
+                <div class="discount__data">
+                    <h2 class="discount__title">Don’t Miss The 50% Discount if You register Today</h2>
+                    <button class="discount__button">Register Today </button>
+                </div>
+            </div>
+        </section>
+        <!-- END DISCOUNT SECTION -->
+    </main>
+    <footer class="footer container">
+        <p class="footer__copy">© 2022 Treloo LLC - All right reserved.</p>
+        <ul class="footer__menu">
+            <li class="footer__item">
+                <a href="#" class="footer__link">Review</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Tips</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Alerts</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__link">Blog</a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>

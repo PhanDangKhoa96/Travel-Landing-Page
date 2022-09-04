@@ -19,17 +19,17 @@
 }
 
 .btn-primary {
-    color: $black-50;
-    font-weight: $medium;
+    color: var(--black-50);
+    font-weight: var(--medium);
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: $blue;
-        color: $white;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     &.active {
-        background-color: $blue;
-        color: $white;
+        background-color: var(--blue);
+        color: var(--white);
     }
 }

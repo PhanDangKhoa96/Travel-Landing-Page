@@ -1,0 +1,68 @@
+.travel {
+    text-align: center;
+    display: grid;
+    row-gap: 30px;
+    column-gap: 50px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: toRem(20px);
+    padding-bottom: toRem(80px);
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        color: var(--black-50);
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            aspect-ratio: 1/2;
+            border-radius: toBorderRadius(15);
+            object-fit: cover;
+        }
+    }
+
+    &__figure {
+        position: absolute;
+        text-align: center;
+        line-height: 1;
+        background-color: var(--white);
+        text-transform: uppercase;
+        padding: 25px;
+        border-radius: toBorderRadius(7);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+        span {
+            color: var(--blue);
+            font-size: var(--font-3xl);
+            font-weight: var(--semi-bold);
+            display: block;
+        }
+
+        &:first-of-type,
+        &:nth-of-type(3) {
+            right: -35px;
+        }
+
+        &:first-of-type {
+            top: 10%;
+        }
+
+        &:nth-of-type(3) {
+            top: 70%;
+        }
+
+        &:nth-of-type(2) {
+            left: -35px;
+            top: 50%;
+        }
+    }
+}

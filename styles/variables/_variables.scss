@@ -1,29 +1,34 @@
 // Typography
 :root {
+    --font-family: 'Poppins',
+        sans-serif;
     --font-base: 16px;
+
+    --font-sm: 0.875rem; //(14px)
+    --font-lg: 1.125rem; //(18px)
+    --font-xl: 1.25rem; //(20px)
+    --font-2xl: 1.5rem; //(24px)
+    --font-3xl: 2.25rem; //(36px)
+    --font-4xl: 3rem; //(48px)
+    --font-5xl: 4rem; //(64px)
+
+    --header-height: 7.5rem;
+
+    // Font weight
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semi-bold: 600;
+    --bold: 700;
+
+    // Color
+    --white: #fff;
+    --black: #000;
+    --black-75: rgba(0, 0, 0, 0.75);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --blue: rgb(62, 134, 245);
+    --blue-20: rgba(62, 134, 245, 0.2);
+    --blue-80: rgba(62, 134, 245, 0.8);
+    --background-color: #F7F7F7;
+    --border-color-base: rgba(172, 172, 172, 0.5);
 }
-
-$font-family: 'Poppins',
-sans-serif;
-$header-height: toRem(120px);
-$font-sm: toRem(14px);
-$font-lg: toRem(18px);
-$font-xl: toRem(20px);
-$font-2xl: toRem(24px);
-$font-3xl: toRem(36px);
-$font-4xl: toRem(48px);
-$font-5xl: toRem(64px);
-
-// Font weight
-$light: 300;
-$regular: 400;
-$medium: 500;
-$semi-bold: 600;
-$bold: 700;
-
-// Color
-$white: #fff;
-$black: #000;
-$black-75: lighten($black, 75%);
-$black-50: lighten($black, 50%);
-$blue: #3E86F5;
