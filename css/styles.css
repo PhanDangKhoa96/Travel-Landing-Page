@@ -653,6 +653,20 @@ li {
     left: 50%;
     transform: translateX(-50%);
   }
+  .header .nav__menu {
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+    height: auto;
+  }
+  .header .nav__link {
+    color: white;
+  }
+  .header .nav__close, .header .nav__toggle {
+    display: none;
+  }
 }
 @media screen and (min-width: 1140px) {
   .header .booking {

@@ -1,8 +1,30 @@
 // For small devices
 @media screen and (min-width: 768px) {
-  .header .booking {
-    left: 50%;
-    transform: translateX(-50%);
+  .header {
+    .booking {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav {
+      &__menu {
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+        color: white;
+        height: auto;
+      }
+
+      &__link {
+        color: white;
+      }
+
+      &__close,
+      &__toggle {
+        display: none;
+      }
+    }
   }
 }
 
