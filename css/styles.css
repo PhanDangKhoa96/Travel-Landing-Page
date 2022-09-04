@@ -170,7 +170,7 @@ li {
 }
 .header .booking {
   position: absolute;
-  bottom: calc(-100vh + 250px);
+  top: calc(100% - 100px);
 }
 .header .booking__list {
   display: inline-flex;
@@ -276,6 +276,7 @@ li {
   padding: 40px 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.3s;
+  z-index: 10;
 }
 .nav__link {
   color: var(--black);
@@ -644,19 +645,18 @@ li {
 }
 .footer__link {
   color: var(--black-75);
-  font-size: var(--font-2xl);
+  font-size: var(--font-lg);
 }
 
 @media screen and (min-width: 768px) {
   .header .booking {
     left: 50%;
     transform: translateX(-50%);
-    bottom: calc(-100vh + 180px);
   }
 }
 @media screen and (min-width: 1140px) {
   .header .booking {
-    bottom: -220px;
+    top: calc(100% - 120px);
   }
   .header .booking__content {
     grid-template-columns: 1fr 1fr 0.5fr;
