@@ -150,7 +150,7 @@ li {
 }
 
 .header {
-  background-image: url("../../images/banner.jpg");
+  background-image: url("/images/banner.jpg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
